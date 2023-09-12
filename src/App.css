@@ -36,3 +36,39 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* U won't be able to use Jumbotron as it is no longer available in the latest Bootstrap 5 
+import {Jumbotron} from  "reactstrap";  in Home.js won't work if u have the latest Bootstrap as it was removed.
+Add the below CSS in App.css file  and insted of using <Jumbotron></Jumbotron> use <div class="jumbotron"> */
+
+.container-fluid .jumbotron, .container .jumbotron {
+  border-radius: 6px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 768px)
+{
+.container-fluid .jumbotron, .container .jumbotron {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+}
+
+@media screen and (min-width: 768px)
+{
+.jumbotron {
+    padding-bottom: 48px;
+    padding-top: 48px;
+}
+}
+
+.jumbotron {
+  background-color: #eee;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
